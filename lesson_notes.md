@@ -27,6 +27,17 @@ DSL - domain specific language
  
   junit hamcrest  
 http://hamcrest.org/
+
+surefire plugin for harmcrest
+
+Assert.assetThat(
+  [text],
+  actual,
+  org.harmcrest.Matcher  
+);
+
+
+
     
 // interface tv console based on Opera (old)
 
@@ -43,7 +54,24 @@ compile, provided, runtime, test
 [https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html]
 
 
+GRADLE vs MAVEN 
+( ручная настройка vs автоматизированная ), декларативность vs процедурность
+gradle - 
 
+jvm - 3 уровня проверки наследования generic'ов.
+
+
+// транзитивная зависимость - нужна всегда.
+// опциональная зависимость - нужна по случаю (if.. )
+ 
+ 
+@AfterEach, @BeforeEach,
+@AfterAll, @BeforeAll
+
+Exeptions (можно запускать через  lambda): 
+    public interface Executable{
+        void execute() throws Throwable;
+    }
 
 
 
