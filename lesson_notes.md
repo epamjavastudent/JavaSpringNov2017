@@ -73,5 +73,19 @@ Exeptions (можно запускать через  lambda):
         void execute() throws Throwable;
     }
 
+кидается
+Failure - ошибка логики (связаная со сравнениями)
+Error - не связано с логикой
 
+
+Группировать тесты - в отдельном классе для всех тестов
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+   TestFeatureLogin.class,
+   TestFeatureLogout.class
+})
+public class FeatureTestSuit{
+}
 
