@@ -89,3 +89,31 @@ import org.junit.runners.Suite;
 public class FeatureTestSuit{
 }
 
+
+
+       Lesson 002, Nov 02 2017
+
+Писать код понятный другим людям.
+
+TDD:
+Write test - run test - refactor test - then refactor code 
+if tests run ok.
+
+
+Kent Beck (TDD book)
+http://www.eecs.yorku.ca/course_archive/2003-04/W/3311/sectionM/case_studies/money/KentBeck_TDD_byexample.pdf
+
+Cucumber (behaviour driven development (aka BDD) - bad practice) 
+
+
+
+
+
+
+
+
+
+
+
+
+
