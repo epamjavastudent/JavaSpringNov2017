@@ -119,9 +119,15 @@ JUnit properties:
     - run fast;
     - primary access/control to tested UoW; (pure functions);
     - isolation (from other tests);
-    - 
+    - if fails - easy detection of root cause and its location.
     
-// 
+UoW = unit of work (method etc.)
+
+Unit tests:
+    - automated tests to proof assumtions to expected final result.
+    - they are simple, fast and can be used multiple times.
+
+
 // https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81_(%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80)
 
 
@@ -130,7 +136,8 @@ JUnit properties:
 // на Scala очень долгая компиляция (!)
 // https://scanlibs.com/programming-in-scala/
 
-
+Mongo DB uses UUID instead auto-increment ID.
+"universally unique identifier" (UUID) is a 128-bit number used to identify information in computer systems. 
 
 
 
