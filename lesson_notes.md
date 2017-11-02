@@ -121,21 +121,34 @@ JUnit properties:
     - isolation (from other tests);
     - if fails - easy detection of root cause and its location.
     
-UoW = unit of work (method etc.)
+UoW = unit of work (like method etc.)
 
 Unit tests:
     - automated tests to proof assumtions to expected final result.
     - they are simple, fast and can be used multiple times.
 
 
-
-manual tests:
+LAUNCHING time (descending):
+    manual tests,
     automated GUI tests,
     integration tests [лучша защита задницы], 
     unit tests.
 
 
+automated GUI tests:
+     - speed up development speed;
+     - they automated;
+     - hard bug detection;
+     
 I&T , integration tests : тдельные программные модули объединяются и тестируются в группе.
+
+
+
+Test are used on all software-development lifecycle.
+types: Unit > Integration > Functional > Stress.
+good self-check [keepin' calm].
+simulate errors.
+instead of docs (always up-to-date).
 
 
 
@@ -149,6 +162,40 @@ I&T , integration tests : тдельные программные модули �
 
 Mongo DB uses UUID instead auto-increment ID.
 "universally unique identifier" (UUID) is a 128-bit number used to identify information in computer systems. 
+
+
+
+
+
+Pair programming:
+    - constantly swith partners,
+    - often change roles, share competence,
+    
+    
+Benefits of pair programming:
+    - keep up ordering / discipline;
+    - clear code;
+    - courage;
+    - everyone involved in code;
+    - saving money;
+    - feedback / short code review;
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
