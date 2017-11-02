@@ -128,6 +128,17 @@ Unit tests:
     - they are simple, fast and can be used multiple times.
 
 
+
+manual tests:
+    automated GUI tests,
+    integration tests [лучша защита задницы], 
+    unit tests.
+
+
+I&T , integration tests : тдельные программные модули объединяются и тестируются в группе.
+
+
+
 // https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D1%8C%D0%B1%D1%80%D1%83%D1%81_(%D0%BA%D0%BE%D0%BC%D0%BF%D1%8C%D1%8E%D1%82%D0%B5%D1%80)
 
 
