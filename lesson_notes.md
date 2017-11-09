@@ -179,11 +179,73 @@ Benefits of pair programming:
     - everyone involved in code;
     - saving money;
     - feedback / short code review;
+    - better code design;
+   
+   
+   
+        LESSON  2017-11-09  Maven
  
- 
- 
- 
- 
+История Maven.
+
+javac -d ./bin ./src/MyClass.java
+cd ../bin
+jar cvf MyProject.jar *
+
+Mainifest-version: 1.0
+Main-Class: MyClass
+
+засунуть сборку в bash-script  [ (?) build ssh/build cmd]
+//  #!/usr/bin/env bash
+javac -d ./bin -cp ./src ./src/MyClass.java
+cd ../bin
+jar cvmf MANIFEST.MF MyProject.jar *
+
+
+
+Сборщики проектов
+MAKE - C/C++
+Maven - Java
+Gradle - Groovy
+Leiningen - Clojure (LISP for JVM)
+set - scala
+
+
+IVY - add-on to Ant (add dependency management for Ant, like in Maven),
+Gradle is based on IVY/ANT ?
+
+Ant - нет необходимости в Internet.
+
+intstall Maven
+	brew install maven	
+
+уровни конфигурации Maven:
+	<project>/pom.xml
+	~/.m2/settings.xml
+	{M2_HOME}/conf/settings.xml
+
+Archetype - plug-in для генерации шаблонов проектов
+	 groupid
+	artifactid
+	version
+	package
+
+зонтичные проекты (посмотреть про это).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
