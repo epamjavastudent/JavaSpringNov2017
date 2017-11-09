@@ -237,6 +237,11 @@ Maven scope <provide>
     (кажется так): почитать об этом
 
 
+Доступ к property ${..}
+
+
+
+        Lesson 2017-11-10 Maven Life Cycle
 
 
 
