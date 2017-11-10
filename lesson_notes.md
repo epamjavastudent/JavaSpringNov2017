@@ -278,7 +278,30 @@ profile scope:
  Plugins - is the power of project constructor (Maven or Gradle).
  
  
-     
+ Add plugins:
+ 
+   <build>
+     <plugins>
+       <plugin>
+          ... 
+       </plugin>
+     </plugins>
+   </build>
+
+
+surefi plugin launches tests.
+
+
+exec plugin - launches *.bin files (not recommended for regular usage).
+
+checkstyle plugin - sets specified rules for whole project structure.
+
+PMD - check project for code duplicates or bad practices (works with byte code /as results of build).
+findbugs - works with source code (developed by Google).
+
+
+
+
 
 
 
