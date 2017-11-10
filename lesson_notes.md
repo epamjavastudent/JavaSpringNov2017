@@ -333,7 +333,20 @@ Firefox nightly.
 
 Maven IDE integration:
     
-
+    
+   version : RELEASE (LTS), LATEST (for the beginning, before test), 
+    * - LATEST version don't work with plugins.
+  good practice - download all dependencies from Spring BOM
+  
+  
+  
+  if we don't have Main() in *.jar (requires MANIFEST), use 
+  java -cp ./path/to/class Class.java
+    instead of 
+  java -jar ./path/to/class/Class.java
+  
+  
+ 
 
 
 
