@@ -244,6 +244,36 @@ Maven scope <provide>
         Lesson 2017-11-10 Maven Life Cycle
 
 
+Maven lifecycle:
+	clean
+	site
+	default
+
+phase -> goal -> 
+
+mvn clean install // standard launching command
+
+Profiles:
+    /dev/..
+    /test/... //not regular - as required testing prod
+    /prod/...
+
+Профиль - сгруппированный определенным образом набор элементов, доступных в POM-файле.
+
+
+profile scope:
+   <profiles>
+        <profile>
+            <id> development </id>
+            <properties>...</properties>
+            <dependencies>...</dependencies>     
+        </profile>
+              <profile>
+                  <id> production </id>
+                  ....
+        </profile>        
+   </profiles>
+    
 
 
 
