@@ -273,7 +273,12 @@ profile scope:
                   ....
         </profile>        
    </profiles>
-    
+   
+   
+ Plugins - is the power of project constructor (Maven or Gradle).
+ 
+ 
+     
 
 
 
