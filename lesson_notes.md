@@ -299,6 +299,30 @@ checkstyle plugin - sets specified rules for whole project structure.
 PMD - check project for code duplicates or bad practices (works with byte code /as results of build).
 findbugs - works with source code (developed by Google).
 
+properties plugin - provides goals to read properties from files and URLs and write properties to files,  and also to set system properties.
+
+cobertura plugin - valuates the % of project covered by tests
+    (now replaced by JaCoCo)
+
+
+Maven NOT GOOD for Continious Integration! (use special tools / Jenkins ?? )
+
+   good parctice - to clean /.m2/repository
+
+
+
+Maven repositories are
+    - remote;
+    - local.
+   
+
+Use Maven Central Repository (https://search.maven.org/)
+[!] beware correct properties of required plugin (mutation available).
+
+launch in OFFLINE mode :
+    mvn install -o
+    mvn test -o
+
 
 
 
