@@ -347,6 +347,9 @@ Maven IDE integration:
   
   
  
+We cab set dependecies in <plugin>, they will be used only for plugin.
+if we got <dependencies> - <dependecy> is used for the project.
+
 
 
 
