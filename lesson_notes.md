@@ -324,9 +324,15 @@ launch in OFFLINE mode :
     mvn test -o
 
 
+Night builds:
+    (automated builds of all daily settings (IN LARGE PROJECTS))
+
+Firefox nightly.
 
 
 
+Maven IDE integration:
+    
 
 
 
