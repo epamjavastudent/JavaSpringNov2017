@@ -351,9 +351,67 @@ We cab set dependecies in <plugin>, they will be used only for plugin.
 if we got <dependencies> - <dependecy> is used for the project.
 
 
+    Lesson 2017-11-13  Maven (end)
+
+
+MOJO (Maven Old Java Objects) - for building your own Maven plugins
+
+CI (Continuos Integration) - постоянная и непрерывная сборка и тестирование 
+разрабатываемого ПО в максимально приближенной к боевой среде 
+    = Jenkins (open-source Hudson), TeamCity, Bamboo (Atlassian), 
+        TeamFoundationServer (TFS) for .NET
+
+1) устанавливается как WAR, или утилита командной строки
+( скачать Hudson.war, запустить на сервере. Запуск на сервере ./catalina.sh run ).
+Jenkins  на сервере не знает, что произошел push (об этом его должен уведомить git)
+В  Hudson это есть.
+
+2) создается Job'а 
+
+Manage Hudson -> Configure Sysytem -> add Maven -> new Job -> Build project.
+Build now -> .. 
+
+Best practice:
+    всегда указывать версию plug-in'ов
+
+<dependencyManagement>
+    <dependencies>
+        ..
+    </dependencies>
+
+Стандартная структура папок предпочтительней
+    /src/main/java
+    /src/main/recources
+    /src/man/webapp
+    /src/test/java
+    /src/test/resources
+
+Комментарий    TODO сопровождать датой {!}
 
 
 
+    GRADLE.
+ 
+JavaRebel (запихивает новый класс в готовый проект), open-source - Spring Loaded.
+
+CI principles:
+   * Each change (should be) auto build and deployed.
+   * test on prod
+   * highest priority issues to fix failed build
+Benefits:
+   * each change guaranties working code
+   * no delay for epic merge
+   * less bugs
+   * allows ready to go
+Challenges:
+   * requires build complex running infrastructure
+   * requires inner-team culture
+   * 
+
+  Continuous delivery - like CI, but linear.
+automate tests are essential,
+automate everything,
+done = release on project,
 
 
 
