@@ -390,7 +390,7 @@ Best practice:
 
 
 
-    GRADLE.
+    CI.
  
 JavaRebel (запихивает новый класс в готовый проект), open-source - Spring Loaded.
 
@@ -414,13 +414,21 @@ automate everything,
 done = release on project,
 
 
+    GRADLE.
+Ant - императивная сборка
+Maven - декларативня сборка
+Gradle -  императивно/деларативная сборка (используется Groovy).
+
+Gradle use build-by-convention: 
+    most commonly used specs are set by default.
 
 
 
+    Groovy.
+declarative type.
 
-
-
-
+gradle tasks
+apply plugin: java
 
 
 
