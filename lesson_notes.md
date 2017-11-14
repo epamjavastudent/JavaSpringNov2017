@@ -469,8 +469,44 @@ Spring
 
 
 
+Spring заменяет EJB (Enterprise Java Beans)
+    EJB - стандарт
+    EJB поддерживают многие вендоры
+    EJB распространен среди разработчиков
+    в EJB много вспомогательных стредств разработки
+  
+Для транзакция лучше EJB.
+
+  spring.io
+  spring.io/blog
+   @springcentral (twitter)
+   @springframework
+  infoq.com/spring
 
 
+<a src="https://www.google.ru/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiSjKuPmb7XAhVZOMAKHf-ADTsQjRwIBw&url=https%3A%2F%2Fdocs.spring.io%2Fspring%2Fdocs%2F3.1.x%2Fspring-framework-reference%2Fhtmlsingle%2Fspring-framework-reference.html&psig=AOvVaw01qCwNty2Say-NCxx65UOg&ust=1510753395310746
+"> Spring runtime scheme </a>
+
+
+IoC (Inversion of control).
+Инверсия управления - ключевое отличие фреймворка от библиотеки.
+Framework работает сам, использует/вызывает библиотеки.
+
+IoC говорит, как отвечать на запросы пользователя.
+
+В Spring классы просто описываются, а связи между объектами прописываются в config'е (прим. XML).
+
+ (!)по умолчанию все объекты в Spring - Singleton'ы
+
+в XML
+контейнер создает необходимые объекты и управляет их временем жизни.
+
+Dependency Injection (DI): release of IoC.
+
+
+
+ 
+ 
 
 
 
