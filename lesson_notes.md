@@ -501,10 +501,35 @@ IoC говорит, как отвечать на запросы пользова
 в XML
 контейнер создает необходимые объекты и управляет их временем жизни.
 
-Dependency Injection (DI): release of IoC.
+
+IoC {
+    Dependency Injection (DI) is the release of IoC.
+    (Бизнес-логика прописывается в классах, а вся инициализация вынесена в config) {
+        Setter dependency injection;
+        Constructor Dependency Injection;
+        Field Dependency Injection(bad practice!)
+    }
+
+   Dependency Lookup (old school) {
+            dependenct pill; 
+            contextualized dependency lookup (CDL)
+            }
+}
+
+
+IoC уменьшает связанность модулей (развитие можели Factory Method).
+(!)Spring имеет ссылку типа interface (а не class).
 
 
 
+BeanFactory - базовый интерфейс представляющий IoC контейнер Spring.
+ApplicationContext - интерфейс, раштряет BeanFactory (лучше использовать его, особенно для Web приложений).
+
+ClasssPathXmlApplicationContext - самая удорбная реализация интерфейса ApplicationContext (другие: GenericXmlApplicationContext, FileSystemXmlAPplicationContext, WebAPplicationContext,)
+
+Конфигурация контейнера кроме Xml возможна также через аннотации, Java-, Groovy-код.
+Можно просто и быстрее  конфигурировать контейнер с помощью аннотаций (не забыть про доп зависимости в код) - но, конфигурации имеют свои ограничения.
+Основные  Spring IoC-контейнеры уже реализованы.
  
  
 
