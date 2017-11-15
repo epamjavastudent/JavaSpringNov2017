@@ -522,7 +522,7 @@ IoC уменьшает связанность модулей (развитие �
 
 
 
-BeanFactory - базовый интерфейс представляющий IoC контейнер Spring.
+BeanFactory - базовый интерфейс представляющий IoC контейнер Spring(без лишних движений).
 ApplicationContext - интерфейс, раштряет BeanFactory (лучше использовать его, особенно для Web приложений).
 
 ClassPathXmlApplicationContext - самая удорбная реализация интерфейса ApplicationContext (другие: GenericXmlApplicationContext, FileSystemXmlAPplicationContext, WebAPplicationContext,)
@@ -542,7 +542,18 @@ download materials for Spring:
 
 
 Nullability (Kotlin main trick) released in Java by annotations using harm crest (view Nikolai Chashnikov - Joker 2014).
+    @Test
+    Person person = ... 
+    assertThat(person, is(getExpectedPerson()));
+
+
 
 /.setting //Eclipse settings - like /.idea
 
+in Spring property means setter,
+<bean p:name/> 
 
+   (!) ПРОЧИТАТЬ ПРО 
+            kava bean p: namespace,
+            reflection
+    
