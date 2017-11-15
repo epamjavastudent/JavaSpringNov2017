@@ -533,10 +533,16 @@ ClassPathXmlApplicationContext - самая удорбная реализаци�
  
  
             Lesson 2017-11-15. Spring day2
+download materials for Spring:
+   https://yadi.sk/i/zhOIa4GH3NEacA
+   https://yadi.sk/i/QLyr4u-W3NEayZ
+   https://yadi.sk/d/G_5HuWnt3NEa5H
+   https://yadi.sk/d/lR_T8xJu3NEZqz
+   
 
 
+Nullability (Kotlin main trick) released in Java by annotations using harm crest (view Nikolai Chashnikov - Joker 2014).
 
-
-
+/.setting //Eclipse settings - like /.idea
 
 
