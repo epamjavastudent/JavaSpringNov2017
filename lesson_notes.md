@@ -557,3 +557,9 @@ in Spring property means setter,
             kava bean p: namespace,
             reflection
     
+ClassWork:
+    download 
+    https://github.com/Vyacheslav-Lapin/spring5-labs.git
+    
+   do 
+    lesson 3 from labguide,
