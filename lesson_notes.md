@@ -563,3 +563,7 @@ ClassWork:
     
    do 
     lesson 3 from labguide,
+    (!) enable annotation precessing for Lombok.
+
+Clone    https://github.com/Vyacheslav-Lapin/spring5-labs.git to my repo, perform all 9 exercises as homework.
+
