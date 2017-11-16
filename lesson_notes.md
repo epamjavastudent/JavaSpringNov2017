@@ -603,14 +603,106 @@ Autowiring (автосвязывание),
         methods() with multi params, 
         fields (even private), 
         arrays, collections with typed variables (с типизированными коллекциями)
-   @Resource , часть JSR-330, defined at javax.annotation (standard pack in JDK)        
-    
-
+   @Resource , часть JSR-330, defined at javax.annotation (standard pack in JDK), близкий 
+   аналог аннотаций.    
+   @Value (не как в Lombok), подставляет значения, исопльзуется там же где @Autowired и @Resource.
    
+ 
+
+   @Component, создает Spring компоненты без Xml, используется с классами .(@Service, @Repository, @Controller)
+   
+   (!)для автоматизации регистрации bean'ов через аннотации необходимо указать инструкцию в конфигурации контейнар
+   <context:component-scan base-package="org.example"/>
+   
+   
+? аннотации как-то отображаются в Application-Context.Xml
+   
+Singleton (double check locking)   - проверить, что он не null, зайти в него и проверить повторно.
+   решение проблемы двойной проверки блокировки  (double check locking) 
+     <bean name="single" class="Single" scope="singleton />
+   
+ Bean life-cycle:
+    definition;
+    pre-initialization;
+    ready;
+    destroyed; (Disposable ("одноразовый") Bean)
+
+   <bean   ... init-method="init"  destroy-method="destroy" />
+
+ (!) Spring has backword compatibility.
+   
+получить доступ к контексту в bean достаточно implement ApplicationContextAware (bad practice - inside there could be all Spring).
+
+Получение событий
+  implement ApplicationListener,
+  implement ApplicationEvent
+
+
+
+Локализация
+    interface MessageSource 
     
+(!!)in AOT (ahead of time) compilation in JDK 9, compilates executable file ( JUG, Чуйко 2016/2017 зима)
+
+
+Инициализация коллекций
+<list>
+    <value> .. </value>
+    <ref />
+    <bean class=".." />
+        <property name=".." value=".." />
+    
+</list>
+
+<map>
+    <entry>
+    ...
+</map>
+
+<properties>
+    <props>
+    ...
+    
+(см. населодование типов в  scope тегов) map ->hashtable -> properties
+
+
+Наследование конфигурации Bean'ов (не путать с наследованием классов).
+Для избежания дублирвоания кода.
+
+
+Объединение коллекуий (возможно, редко используется).
+
+
+p-namespace (properties for Xml)
+c-namespace (constructor args)
+
+
+Профили конфигурации
+    <bean profile="dev">
+        ...
+    </beans>
+    
+   <bean profile="production">
+        ...
+    </beans>
 
 
 
 
+Java-based configuration
+
+@Configuration
+@Profile("dev")  ?
 
 
+
+
+Groovy:
+    beans{
+        framework Spring, 'Grails"
+        foo String, "hello"
+        bar(Bar,s:'hello',i:123)
+    }
+
+
+  (!) HW - lesson 4
