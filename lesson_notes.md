@@ -706,3 +706,8 @@ Groovy:
 
 
   (!) HW - lesson 4  + read reflection API
+
+
+/// IDEA : Alt+Enter - context menu
+
+
