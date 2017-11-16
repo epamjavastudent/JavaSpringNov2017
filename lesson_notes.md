@@ -567,3 +567,50 @@ ClassWork:
 
 Clone    https://github.com/Vyacheslav-Lapin/spring5-labs.git to my repo, perform all 9 exercises as homework.
 
+
+
+
+            Lesson  2017-11-16. Spring (day 3)
+
+подключение свойств через тег <properties> в Xml.
+
+
+Dependency injection (DI) - setting dependencies via constructor.
+
+   reflection - достать информацию об объекте получить из runtime'а (Reflection API).
+      без reflection невозможно узнать имена параметров методов (более глубокий уровень рефлексии - debug info).
+
+Setter DI
+
+
+Autowiring (автосвязывание),
+   фишка IoC.  Используется с полиморфизмом.
+   
+   <bean id=".." class=".." autowire="no|byName|byType|constructor" />
+   <bean id="manger" class="Manager" autowire="byName">
+   
+   autowire="byType" // использовать с осторожностью.
+   'no' - запрет автосвязывание, использовать значение по умолчанию.
+  
+   
+Контейнер можно собирать через аннотации
+<context:annotation-config />
+
+   @Required, ставится над setter (запрещает сборку без вызова)
+   @Autowired (самая популярная), используется с 
+        setters, 
+        constructors, 
+        methods() with multi params, 
+        fields (even private), 
+        arrays, collections with typed variables (с типизированными коллекциями)
+   @Resource , часть JSR-330, defined at javax.annotation (standard pack in JDK)        
+    
+
+   
+    
+
+
+
+
+
+
