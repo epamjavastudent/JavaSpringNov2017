@@ -749,6 +749,7 @@ AOP requires 3 dependencies:
  инициирование динамических proxy в config-файле 
    <aop:aspectj-autoproxy/>
 
-
-
-
+   Join Point - место применения @Pointcut'а 
+   
+   в  Pointcut type относится к  class, interface, enum, abstract class
+   
