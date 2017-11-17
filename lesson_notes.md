@@ -711,3 +711,10 @@ Groovy:
 /// IDEA : Alt+Enter - context menu
 
 
+
+            Lesson 2017-11-17. Spring AOP.
+
+DTO - data transfer object.
+
+
+
