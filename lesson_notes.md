@@ -716,5 +716,39 @@ Groovy:
 
 DTO - data transfer object.
 
+AOP = вынос ортогональной функциональности в отдельные классы ("сервисная связь" между объектами).
+(функциональные вспомогательные операции, проходящие через весь код выносится в отдельные классы).
+
+в СУБД ортогональность реализуется через триггеры.
+
+иньекция - авто-подстановка объектов Spring'ом (через аннотации или иначе)
+аспекты - это связи между объектами (например proxy-класс/оболочка вокруг класса)
+    Interface -> proxy {class}  //by default
+
+CGLIB (сторонняя библиотека) proxy. реализует AOP без Interface, но Performance  медленный
+
+
+java.lang.reflect.Proxy (JDK 6 >)
+
+
+
+AOP requires 3 dependencies:
+
+ 'org.aspectj:aspectjrt:+'
+ 'aopalliance:aopalliance:+'
+ 'org.aspectj:aspectjweaver"+'
+
+
+@Pointcut  - язык, который применяет поиск RegEx по всему проекту,
+ чтобы к подходящим объектам применить необходимые аспекты.
+ 
+
+
+   LePUS 3 диаграмма (scheme on page 125 of Spring-Workbook).
+ 
+ инициирование динамических proxy в config-файле 
+   <aop:aspectj-autoproxy/>
+
+
 
 
