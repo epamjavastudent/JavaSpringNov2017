@@ -753,3 +753,87 @@ AOP requires 3 dependencies:
    
    в  Pointcut type относится к  class, interface, enum, abstract class
    
+
+
+
+
+
+
+            Lesson 2017-11-20. Groovy
+
+Groovy programming language (Михаил).
+
+самый известный продкут на Groovy - (Gradle) 
+
+Groovy is a powerful, optionally typed and dynamic language, with static-typing 
+and static compilation capabilities, for the Java platform aimed at improving 
+developer productivity thanks to a concise, familiar and easy to learn syntax.
+
+Скриптовый язык (прототип Java XXI века).
+println 'Hello world!'
+
+
+дерево трансформаций в Runtime,  чтобы преобразовать скрипт в Java код.
+
+
+def - ключевое слово для переменной
+'java string'
+new Class()
+
+
+''' 
+    multi-line string
+'''
+
+def gs = "groovy.lang.GString" // groovy-line string, accepts ${placeholder}
+
+
+assert 
+
+
+RegEx in /([A-Z][a-z]+)/  , не нужно экранировать  / через /\
+Matcher m = 'StringSomeText' =~ /([A-Z][a-z]+)/
+
+//проверить на соответствие строки
+assert 'sdf' ==~ /\w+/
+
+
+
+для строк == это equals()
+
+
+
+// Collection
+def list = [] //we get ArrayList
+
+
+// create array
+def array = [] as String[]
+
+
+обращение к свойству (неявный метод get() для name)
+assert list.getClass().name = ..... 
+
+
+Map map = [:]  //linked has map
+
+map = ['str':1 , date:day ]
+
+
+в Groovy все исколючения Runtime , нет try{} catch(){}  и т.п.
+
+
+
+
+В lambda - нет доступа к внешнему контектсту, а в замыкании оно есть
+
+функциональные программирование удобно для распараллеливания (передать функцию в качестве аргумента 
+в другую функцию).
+
+
+def closure={
+
+}
+
+
+
