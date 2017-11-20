@@ -761,9 +761,9 @@ AOP requires 3 dependencies:
 
             Lesson 2017-11-20. Groovy
 
-Groovy programming language (Михаил).
+Groovy programming language (Михаил Денисов).
 
-самый известный продкут на Groovy - (Gradle) 
+самый известный продкут на Groovy - (Gradle) , эволюционирует в Kotlin.
 
 Groovy is a powerful, optionally typed and dynamic language, with static-typing 
 and static compilation capabilities, for the Java platform aimed at improving 
@@ -811,7 +811,7 @@ def list = [] //we get ArrayList
 def array = [] as String[]
 
 
-обращение к свойству (неявный метод get() для name)
+обращение к атрибутам (неявный метод get() для name)
 assert list.getClass().name = ..... 
 
 
@@ -831,9 +831,43 @@ map = ['str':1 , date:day ]
 в другую функцию).
 
 
-def closure={
+def closure= { имя ->  исполняемый блок кода}
 
-}
+замыкание вызывается как функция 
+
+closure(arg)
+
+
+invoke methods with closures:
+assert myFunc ( 'epam', {it.toUpperCase()} )  == 'EPAM'
+    //it - параметр замыкания , означает it -> it...
+
+
+
+AST Transformations:
+    @TypeChecked, @CompileStatic, @Immutable ...
+
+
+
+groovy floating numbers, java.math.BigDecimal
+
+
+map keys are all strings
+
+return в замыкании = выход, а в цикле = continue
+
+*. для элементов списка вызовется метод (справа от точки)
+
+замыкание всегда послежнее в теле функции
+
+
+
+Chuck Norris jokes in JSON:
+    http://www.icndb.com/api/
+    http://www.icndb.com/the-jokes-2/
+
+
+
 
 
 
