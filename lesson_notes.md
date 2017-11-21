@@ -763,7 +763,8 @@ AOP requires 3 dependencies:
 
 Groovy programming language (Михаил Денисов).
 
-Groovy - чистая java, на JVM.
+Groovy - чистая java, на JVM. (Java -> Reflection -> ByteCode -> ? -> Groovy)
+(написан 60% java, 40% groovy)
 
 самый известный продкут на Groovy - (Gradle) , эволюционирует в Kotlin.
 
