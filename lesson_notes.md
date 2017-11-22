@@ -961,12 +961,25 @@ AOP не приспособлен для debug-режима (breakpoint надо
 
 
 
+В языке C есть механизмы прямой работы с оперативной памятью.
+
+JNI - java native interface - для работы с памятью,
+(очень медленный по performance из-за конвертации из Java в С).
+
+
+intrinsics methods in java -  библиотека на C для прямой работы Java с  памятью,
+нужно зарегистрировать перед использованием.
+
+см. Faulker Simons  (JPoint 2016)
 
 
 
+см видео "Нужен ли нам Unsafe в Java?" 
+Андрей Паньгин
+https://www.youtube.com/watch?v=moHNujaeD2I
 
-
-
+отказались от sun.misc.unsafe (для защиты Инкапсуляции в Java),  начиная с Java 8.
+    https://habrahabr.ru/post/322840/
 
 
 

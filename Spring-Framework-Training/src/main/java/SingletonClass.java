@@ -1,4 +1,5 @@
 
+import sun.misc.Unsafe;
 
 /*double check locking: */
 public class SingletonClass {
