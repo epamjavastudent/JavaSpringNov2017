@@ -986,7 +986,7 @@ intrinsics methods in java -  библиотека на C для прямой р
 Андрей Паньгин
 https://www.youtube.com/watch?v=moHNujaeD2I
 
-отказались от sun.misc.unsafe (для защиты Инкапсуляции в Java),  начиная с Java 8.
+ORACLE пытается/хочет отказались от sun.misc.unsafe (для защиты Инкапсуляции в Java),  начиная с Java 8.
     https://habrahabr.ru/post/322840/
 
 
@@ -1030,10 +1030,28 @@ https://www.youtube.com/watch?v=1MY2xTND5oY
 
 
 sonarlint - полезный plug-in ......
-
+https://www.sonarlint.org/
 
 
     основы JDBC
+
+много данных сериализуются,
+чтобы их прочесть - нужно Десериализовать.
+На больших объемах - это проблема
+
+JDBC - стандартный  JAVA-интерфейс для работы с СУБД.
+
+модели доступа к БД
+  -двузвенная: app(jdbc)-db
+  -трехзвенная: app(jdbc)-clint-db
+  
+драйвера JDBC:
+   мост JDBC-ODBC;
+   native API (pure Java driver);
+   networking protocol / "pure" java driver;
+   native protocol / "pure" java driver;
+   
+
 
 
 
