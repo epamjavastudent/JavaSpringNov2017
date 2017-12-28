@@ -1152,6 +1152,19 @@ PrepareStatement решает эти проблемы.
 
        Lesson 2017-12-28. Spring (day 9)   JDBC continue?
 
+Junior не знает что такое BestPractices, он изобретает велосипед вместо них. (для него - это Design Patterns)
+Middle просто их использует.
+Senior применяет BestPractice с умом.
+
+Каждый код как правило всегда говно.
+
+Senior помимо правки кода, занимается его  refactoring’ом
+
+
+
+
+
+Connection Pool - его основной минус :
 
 
 
