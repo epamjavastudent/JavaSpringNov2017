@@ -1179,6 +1179,18 @@ https://jitpack.io/
 
 
 
+(!) начинаем использовать в качестве примера другой проект (по теме рефакторинг)
+вместо
+    https://github.com/Vyacheslav-Lapin/spring5-labs
+
+используем этот
+    https://github.com/Vyacheslav-Lapin/refactoring
+    
+    
+
+
+
+
 
 
 
