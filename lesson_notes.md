@@ -1,4 +1,4 @@
-(epamjavastudent kia j8)
+(epamjavastudent kia j8 Zaal2017bio )
 
     Lesson 001, Nov 01 2017
 
@@ -1161,15 +1161,21 @@ Senior применяет BestPractice с умом.
 Senior помимо правки кода, занимается его  refactoring’ом
 
 
-
-
-
-Connection Pool - его основной минус :
-
+   "Realize It" - book of IT, в 2017 году написал специалист по судебным искам к IT компаниям, по причинам отказа сервисов .
 
 
 
 
+Connection Pool - его основной минус : ????
+
+
+@DisplayName // JUnit 5 annotation - allows to set name with spaces.
+
+
+jitpack.io - альтернатива  MavenCentral (аналог на Gradle "Maven Publish") 
+- выкачивает, собирает проект по указанному адресу, собирает его и отправляет его готовый как зависимость
+- позволяет использовать  GitHub как MavenCentral
+https://jitpack.io/
 
 
 
