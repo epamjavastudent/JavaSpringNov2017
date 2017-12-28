@@ -1142,10 +1142,15 @@ PrepareStatement решает эти проблемы.
 
 
 
+       Lesson 2017-12-22. Spring (day 8)   JDBC continue.
+
+Я пропустил
 
 
 
 
+
+       Lesson 2017-12-28. Spring (day 9)   JDBC continue?
 
 
 
