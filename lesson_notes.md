@@ -1188,6 +1188,14 @@ https://jitpack.io/
     
     
 
+@Log4j2 - удобный Логгер!
+
+
+
+
+Ипользуя interface AutoCloseable можно вызывать метод close() сколько угодно раз.
+Но в interface AutoCloseable  можно вызвать  close() только один раз.
+
 
 
 
