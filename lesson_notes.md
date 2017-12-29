@@ -1273,6 +1273,25 @@ DTO - data transfer object.
 что в случае ошибки всего действия, каждое из этих действий будет отменено, а в случае успеха - все будут исполнены. 
 
 
+В транзакции есть точка вызова (именованная точка сохранения) Savepoint и точка остановки (записи) Connection.commit(). 
+
+проблемы транзакций:
+    1) грязное чтение (dirty reads), когда данные задействованы в операции, 
+    которая будет откатана назад, но временно недоступны
+    2) непроверяющееся чтение (nonrepeatable reads)
+    3) фантомное чтение (phantom reads) - обратно от 2-ого.
+    
+
+у conncetion есть режимы работы
+TRANSACTION_NONE ( = Set AutoCommit(true)), информирует о том, что драйвер не поддерживает транзакции
+TRANSACTION_READ_UNCOMMITED, допустимы все 3 проблемы
+TRANSACTION_READ_COMMITED (default), нет dirty read
+TRANSACRION_REPEATABLE_READ, возможно фантомное чтение 
+TRANSACTION_SERIALIZABLE, защита от всех проблем (данные хранятся в буффере на момент начала транзакции для )
+
+
+https://ru.wikipedia.org/wiki/%D0%A3%D1%80%D0%BE%D0%B2%D0%B5%D0%BD%D1%8C_%D0%B8%D0%B7%D0%BE%D0%BB%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8_%D1%82%D1%80%D0%B0%D0%BD%D0%B7%D0%B0%D0%BA%D1%86%D0%B8%D0%B9#%D0%9D%D0%B5%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D1%8F%D1%8E%D1%89%D0%B5%D0%B5%D1%81%D1%8F_%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D0%B5
+
 
 
 
