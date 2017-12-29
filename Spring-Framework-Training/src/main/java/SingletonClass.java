@@ -21,4 +21,9 @@ public class SingletonClass {
         }
         return ourInstance;
     }
+
+    public static void main(){
+
+    }
+
 }

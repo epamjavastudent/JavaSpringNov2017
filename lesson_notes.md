@@ -1219,19 +1219,58 @@ java.lang.reflect.Proxy;
 Dynamic Proxy Classes
     https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html
 
-
 Proxy - это обертка, которая реализуется в AOP, входящий объект  оборачивается классом-оберткой, 
 после чего он помещается в объект Proxy и дальше с ним совершаются все вычисления, 
 а итоговый объект возвращается в качестве результата.
 
 
+Callable - до Java 8 использовался вместо Supplier (он также ничего не принимает на вход, и возвращает объект).
+
+
+с3p0 - most popular open-source connection pool.
+maven dependency
+    //C3P0
+    'com.mchange:c3p0:+'
+
+
+H2 — открытая кроссплатформенная СУБД, полностью написанная на языке Java.
+
+
+//read file into String
+ Stream<String> lines = java.nio.file.Files.lines(Paths.get("./src/test/resources/h2.sql")).collect(Collectors.joining());
+lines.onCLose(() -> { System.out.println("Закрываем Stream")} );
+
+
+Stream - это тоже ресурс, его тоже надо закрывать
+
+
+C3P0 можно использовать место контейнра сервелетов
+
+
+ДЗ
+    почитать статью  "Зачем нужны сервера приложений, если есть Apache Tomcat и Spring Framework?"
+    http://webcache.googleusercontent.com/search?q=cache:https://articles.javatalks.ru/articles/24
+    
+   оригинал https://articles.javatalks.ru/articles/24
+    
+   в помощь -  кэш Гугл или Яндекс
+   https://habrahabr.ru/post/146200/
 
 
 
 
+DAO - отдельно выделенный архитектурный слой, в котором реализуется вся логика работы с БД.
+Data Access Object.
+
+DTO - data transfer object.
 
 
+Транзации заложены в базовый механизм JDBC.
 
+Транзакции - позволяют совершать операцию 1) зафикчировать commit() или 2) откатиться назад  rollback().
+решают проблему, когда на уровне бизнес логики есть одна целостная операция, 
+но с точки зрения технической реализации эта операция объединяет в себе несколько действий, чтобы гарантировать, 
+что в случае ошибки всего действия, каждое из этих действий будет отменено, а в случае успеха - все будут исполнены. 
 
 
 
