@@ -1203,13 +1203,45 @@ https://jitpack.io/
 
 
    мульти-каретка:   
-   alt+leftt click(HOLD) и вести в нужно направление
- или 
+   alt+left click(HOLD) и вести в нужно направление
+    или 
    double alt (HOLD) + arrow up/down/left/right  
 
 
 
 
+    Lesson 2017-12-29. Spring (day 10)  
+   
+java.lang.reflect.InvocationHandler; - создание proxy объекта по существующему interface'у. 
+                Перехватить объект по ...   
+
+java.lang.reflect.Proxy;
+Dynamic Proxy Classes
+    https://docs.oracle.com/javase/8/docs/technotes/guides/reflection/proxy.html
 
 
+Proxy - это обертка, которая реализуется в AOP, входящий объект  оборачивается классом-оберткой, 
+после чего он помещается в объект Proxy и дальше с ним совершаются все вычисления, 
+а итоговый объект возвращается в качестве результата.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Lesson 2018-01-09
+ УРА! 
+ НОВЫЙ ГОД
 
