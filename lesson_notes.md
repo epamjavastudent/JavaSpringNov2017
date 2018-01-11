@@ -1378,6 +1378,9 @@ rowMapper - описывает один запрос к базе, а затем 
 
 
     Lesson 2018-01-11
+we did Refactoring in sping5-lab
 
 
+
+    Lesson 2018-01-12
 
