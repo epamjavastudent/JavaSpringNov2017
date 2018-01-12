@@ -1414,8 +1414,15 @@ Hibernate
    
    <persistence-unit name="">   это нацеленность hibernate на одну БД.
    
+ 
+ 
+Основная сущность:
+ 
+   JPA:
+    EntityManagerFactory
    
-   
+   Hibernate:
+       SessionManager
    
    
    
