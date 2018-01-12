@@ -1412,7 +1412,7 @@ Hibernate
    НЕ ЧИТАТЬ Tutorial на оф. сайте HIBERNATE (!).
    
    
-   persistence unit - нацеленность hibernate на одну БД.
+   <persistence-unit name="">   это нацеленность hibernate на одну БД.
    
    
    
