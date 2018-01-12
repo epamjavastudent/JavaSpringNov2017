@@ -1385,6 +1385,8 @@ we did Refactoring in sping5-lab
     Lesson 2018-01-12
 JPA (JAVA Persistence API).
 
+Spring Boot  исполняет все рутинные действия по созданию Spring-приложений, ускоряя работу пользователя.
+
 DbUnit - framework Java lля покрытия БД.
 
   P6SPY - следит за Hibernate, как он кидает запросы в БД.
@@ -1400,3 +1402,32 @@ Hibernate
     - бесперебойная работа в многопоточной среде.
 
   
+   Simula 67 - первый ООП язык.
+   
+   
+  Учить Hibernate
+    1) Кристиан Бауэр, Гэвин Кинг - Хороший учебник по Hiberntae (2nd Edition)
+    2) хороший короткие примеры по Hibernate на сайте (http://www.thoughts-on-java.org/)
+    
+   НЕ ЧИТАТЬ Tutorial на оф. сайте HIBERNATE (!).
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
