@@ -1383,4 +1383,20 @@ we did Refactoring in sping5-lab
 
 
     Lesson 2018-01-12
+JPA (JAVA Persistence API).
 
+DbUnit - framework Java lля покрытия БД.
+
+  P6SPY - следит за Hibernate, как он кидает запросы в БД.
+  Почитать подробнее   http://barbitoff.blogspot.ru/2012/11/java-p6spy-jdbc-logging-anywhere.html
+
+
+
+Hibernate 
+    решает проблему:
+    - (де)сериализация графов связанных объектов,
+    - сортировка/поиск среди сериализованных объектов необходимых поддеревьев,
+    - выборка с фильтрацией (в режиме потока) по критерию,
+    - бесперебойная работа в многопоточной среде.
+
+  
